@@ -30,7 +30,7 @@ CCLIENTLIB = $C\cclient_a.lib
 LIBS = $(CCLIENTLIB) ws2_32.lib winmm.lib advapi32.lib secur32.lib crypt32.lib
 OSCOMPAT = /DWIN32
 VSCOMPAT = /D_CRT_SECURE_NO_DEPRECATE /D_CRT_NONSTDC_NO_DEPRECATE
-CFLAGS= -I$C /MD /W3 $(OSCOMPAT) $(VSCOMPAT) -nologo $(EXTRACFLAGS)
+CFLAGS= -I$C /MT /W3 $(OSCOMPAT) $(VSCOMPAT) -nologo $(EXTRACFLAGS)
 
 ipopd: ipop2d ipop3d
 
