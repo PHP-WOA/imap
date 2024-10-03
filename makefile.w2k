@@ -29,7 +29,7 @@ COPY=copy
 CD=cd
 MAKE=nmake /nologo /f makefile.w2k IP=$(IP)
 MKDIR=mkdir
-RD=rmdir /s /q
+RD=cmd /c rmdir /s /q
 
 
 # Make the IMAP Toolkit
